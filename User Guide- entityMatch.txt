@@ -1,0 +1,21 @@
+Please follow the following steps to use the java program to generate the matching words given two files as the input-
+1. The main .java file to run is called FindMatchingWords.java. It is in the src folder of the StringMatching folder
+2. Run it.
+3. Console will prompt to enter the file names of the files that you want to compare.
+4. If the two files are in the same location as the FindMatchingWords.java, simply the file names would suffice
+5. Else, please enter the relative path (relative to FindMatchingWords.java) or absolute path of the input files
+6. Console will then prompt to enter the type of data, please enter P for Persons, O for Ogranizations and L for Locations.
+7. Console will then prompt to enter the threshold percentage beyond which a match will be considered, for eg. 80 or 100 (for 100% match)
+8. Console will then prompt to enter T for true or F for false for if you want to print matching scores along with the matched pair as well in output.txt
+8. Depending on the size of the two files, program will take some time to generate an output.txt file which will contain the matched pairs with a pipe (|) delimiter in between.
+9. If you wish to change this delimiter to something else (please don't use comma as certain entities have comma in them), change the variable delimiter in the FindMatchingWords.java to whatever you wish. The variable is defined at Line number 352 of the code.
+10. For benchmarking, a file with roughly 16000 rows in persons.1txt and 41000 rows in persons2.txt, the program took around 1.5 hours to generate 11000 matched pairs.
+11. There is another java program called EditDistance.java which outputs the editString and editDistance given two strings as input. The costs of insertion, deletion and substitution can be specified in the program. For eg.
+Enter the words- 
+lkilo23l
+kilo3w
+dmmmddms
+5.0
+
+here, d stands for deletion, m stands for match, s stands for substitution.
+Cost of insertion and deletion was set to 1.0 and substitution was set to 2.0
